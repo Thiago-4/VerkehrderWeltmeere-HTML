@@ -1,0 +1,11 @@
+.sidebar_container {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    background-color: aqua;
+    width: 20%;
+}
+
+.container {
+    width: 80%;
+}

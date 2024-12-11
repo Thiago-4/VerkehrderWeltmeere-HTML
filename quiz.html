@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Verkehr der Weltmeere</title>
+        <link href="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/style.min.css" rel="stylesheet" />
+        <link href="css/styles.css" rel="stylesheet" />
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="sb-nav-fixed">
+        <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+            <!-- Navbar Brand-->
+            <a class="navbar-brand ps-3" href="index.html">Menu</a>
+            <!-- Sidebar Toggle-->
+            <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
+        </nav>
+        <div id="layoutSidenav">
+            <div id="layoutSidenav_nav">
+                <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+                    <div class="sb-sidenav-menu">
+                        <div class="nav">
+                            <div class="sb-sidenav-menu-heading">Anfang</div>
+                            <a class="nav-link" href="index.html">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-ship"></i></div>
+                                Startseite
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Themen</div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts" aria-expanded="false" aria-controls="collapseLayouts">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-tree"></i></div>
+                                Warum Seefahrt?
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav">
+                                    <a class="nav-link" href="Vorteile.html">Vorteile</a>
+                                    <a class="nav-link" href="Nachteile.html">Nachteile</a>
+                                </nav>
+                            </div>
+                            <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapsePages" aria-expanded="false" aria-controls="collapsePages">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-money-check-dollar"></i></div>
+                                Wirtschaft
+                                <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                            </a>
+                            <div class="collapse" id="collapsePages" aria-labelledby="headingTwo" data-bs-parent="#sidenavAccordion">
+                                <nav class="sb-sidenav-menu-nested nav accordion" id="sidenavAccordionPages">
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseAuth" aria-expanded="false" aria-controls="pagesCollapseAuth">
+                                        wichtige Routen
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseAuth" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="Engpässe.html">Kanäle und Engpässe</a>
+                                            <a class="nav-link" href="Routen.html">wichtige Routen</a>
+                                            <a class="nav-link" href="Entwicklung.html">Entwicklung</a>
+                                        </nav>
+                                    </div>
+                                    <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#pagesCollapseError" aria-expanded="false" aria-controls="pagesCollapseError">
+                                        Container und Schiffe
+                                        <div class="sb-sidenav-collapse-arrow"><i class="fas fa-angle-down"></i></div>
+                                    </a>
+                                    <div class="collapse" id="pagesCollapseError" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordionPages">
+                                        <nav class="sb-sidenav-menu-nested nav">
+                                            <a class="nav-link" href="container.html">der Standartcontainer</a>
+                                            <a class="nav-link" href="Schiffe.html">Containerschiffe</a>
+                                        </nav>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="sb-sidenav-menu-heading">Quiz</div>
+                            <a class="nav-link" href="quiz.html">
+                                <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
+                                Quiz
+                            </a>
+                            <div class="sb-sidenav-menu-heading">Quellen</div>
+                            <a href="quellen.html" class="nav-link">
+                                <div class="sb-nav-link-icon"><i class="fa-solid fa-book"></i></div>
+                                Quellen
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sb-sidenav-footer">
+                        <div class="small">Ersteller:</div>
+                        Cosmo Trakal
+                    </div>
+                </nav>
+                </nav>
+            </div>
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container mt-5">
+                        <h1 class="text-center mb-4">Quiz: Verkehr der Weltmeere</h1>
+                    
+                        <!-- Quiz Fragen -->
+                        <form id="quizForm">
+                            <!-- Frage 1 -->
+                            <div class="card mb-4 shadow">
+                                <div class="card-header bg-primary text-white">
+                                    <h5>1. Was gehört nicht zu den Vorteilen des maritimen Transports?</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q1" value="A" id="q1a">
+                                        <label class="form-check-label" for="q1a">A) Kostengünstige Transportation</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q1" value="B" id="q1b">
+                                        <label class="form-check-label" for="q1b">B) Globale Reichweite</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q1" value="C" id="q1c">
+                                        <label class="form-check-label" for="q1c">C) Wenig Schwefelausstoß</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q1" value="D" id="q1d">
+                                        <label class="form-check-label" for="q1d">D) Hohe Transportkapazität</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q1" value="E" id="q1e">
+                                        <label class="form-check-label" for="q1e">E) Wenig CO2-Ausstoß</label>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Frage 2 -->
+                            <div class="card mb-4 shadow">
+                                <div class="card-header bg-primary text-white">
+                                    <h5>2. Wie groß ist das Innenvolumen eines Standard 1-TEU Containers?</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q2" value="A" id="q2a">
+                                        <label class="form-check-label" for="q2a">A) 102 Kubikmeter</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q2" value="B" id="q2b">
+                                        <label class="form-check-label" for="q2b">B) 132 Kubikmeter</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q2" value="C" id="q2c">
+                                        <label class="form-check-label" for="q2c">C) 15 Kubikmeter</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q2" value="D" id="q2d">
+                                        <label class="form-check-label" for="q2d">D) 45 Kubikmeter</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q2" value="E" id="q2e">
+                                        <label class="form-check-label" for="q2e">E) 33 Kubikmeter</label>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Frage 3 -->
+                            <div class="card mb-4 shadow">
+                                <div class="card-header bg-primary text-white">
+                                    <h5>3. Wie viele Container kann ein durchschnittliches Containerschiff transportieren?</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q3" value="A" id="q3a">
+                                        <label class="form-check-label" for="q3a">A) 10.000</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q3" value="B" id="q3b">
+                                        <label class="form-check-label" for="q3b">B) 5.000</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q3" value="C" id="q3c">
+                                        <label class="form-check-label" for="q3c">C) 2.000</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q3" value="D" id="q3d">
+                                        <label class="form-check-label" for="q3d">D) 15.000</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q3" value="E" id="q3e">
+                                        <label class="form-check-label" for="q3e">E) 500</label>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Frage 4 -->
+                            <div class="card mb-4 shadow">
+                                <div class="card-header bg-primary text-white">
+                                    <h5>4. Wie heißt das größte Containerschiff der Welt?</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q4" value="A" id="q4a">
+                                        <label class="form-check-label" for="q4a">A) MSC Irina</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q4" value="B" id="q4b">
+                                        <label class="form-check-label" for="q4b">B) Evergiven</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q4" value="C" id="q4c">
+                                        <label class="form-check-label" for="q4c">C) Atlantico</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q4" value="D" id="q4d">
+                                        <label class="form-check-label" for="q4d">D) OOCL Spain</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q4" value="E" id="q4e">
+                                        <label class="form-check-label" for="q4e">E) MSC Gülsün</label>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <!-- Frage 5 -->
+                            <div class="card mb-4 shadow">
+                                <div class="card-header bg-primary text-white">
+                                    <h5>5. Welche der Meerengen ist künstlich angelegt?</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q5" value="A" id="q5a">
+                                        <label class="form-check-label" for="q5a">A) Straße von Malakka</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q5" value="B" id="q5b">
+                                        <label class="form-check-label" for="q5b">B) Panamakanal</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q5" value="C" id="q5c">
+                                        <label class="form-check-label" for="q5c">C) Straße von Hormus</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q5" value="D" id="q5d">
+                                        <label class="form-check-label" for="q5d">D) Nordkanal</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q5" value="E" id="q5e">
+                                        <label class="form-check-label" for="q5e">E) Ärmelkanal</label>
+                                    </div>
+                                </div>
+                            </div>
+                    
+                            <div class="card mb-4 shadow">
+                                <div class="card-header bg-primary text-white">
+                                    <h5>6. Etwa 20% der deutschen Importgüter kommen über diese Meerenge</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q6" value="A" id="q6a">
+                                        <label class="form-check-label" for="q6a">A) Straße von Malakka</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q6" value="B" id="q6b">
+                                        <label class="form-check-label" for="q6b">B) Panamakanal</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q6" value="C" id="q6c">
+                                        <label class="form-check-label" for="q6c">C) Straße von Hormus</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q6" value="D" id="q6d">
+                                        <label class="form-check-label" for="q6d">D) Nordkanal</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q6" value="E" id="q6e">
+                                        <label class="form-check-label" for="q6e">E) Ärmelkanal</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Frage 7 -->
+                            <div class="card mb-4 shadow">
+                                <div class="card-header bg-primary text-white">
+                                    <h5>7. Das am häufigsten eigesetzte Treibstoffmittel für Containerschiffe ist:</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q7" value="A" id="q7a">
+                                        <label class="form-check-label" for="q7a">A) Schweröl</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q7" value="B" id="q7b">
+                                        <label class="form-check-label" for="q7b">B) LNG</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q7" value="C" id="q7c">
+                                        <label class="form-check-label" for="q7c">C) LGN</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q7" value="D" id="q7d">
+                                        <label class="form-check-label" for="q7d">D) Marinedieselöl</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q7" value="E" id="q7e">
+                                        <label class="form-check-label" for="q7e">E) Erdgas</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Frage 8 -->
+                            <div class="card mb-4 shadow">
+                                <div class="card-header bg-primary text-white">
+                                    <h5>8. Was gehört nicht zu den Umweltproblemen des Verkehrs der Weltmeere:</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q8" value="A" id="q8a">
+                                        <label class="form-check-label" for="q8a">A) Lärmbelastung</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q8" value="B" id="q8b">
+                                        <label class="form-check-label" for="q8b">B) Meerverunreinigung</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q8" value="C" id="q8c">
+                                        <label class="form-check-label" for="q8c">C) Luftverschutzung durch Schwefelausstoß</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q8" value="D" id="q8d">
+                                        <label class="form-check-label" for="q8d">D) Schlechte Arbeitsbedingungen</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q8" value="E" id="q8e">
+                                        <label class="form-check-label" for="q8e">E) Illegale Müllentsorgung</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Frage 9 -->
+                            <div class="card mb-4 shadow">
+                                <div class="card-header bg-primary text-white">
+                                    <h5>9. Was trägt am meisten zur Meerverunreinigung bei?</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q9" value="A" id="q9a">
+                                        <label class="form-check-label" for="q9a">A) Schwefelausstoß</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q9" value="B" id="q9b">
+                                        <label class="form-check-label" for="q9b">B) Unfälle auf Öltankern</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q9" value="C" id="q9c">
+                                        <label class="form-check-label" for="q9c">C) Abfall von Meerestieren</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q9" value="D" id="q9d">
+                                        <label class="form-check-label" for="q9d">D) Marinedieselölnutzung</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q9" value="E" id="q9e">
+                                        <label class="form-check-label" for="q9e">E) Auswaschen der Bilgen</label>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Frage 10 -->
+                            <div class="card mb-4 shadow">
+                                <div class="card-header bg-primary text-white">
+                                    <h5>10. Was bedeutet der Ausdruck Billigflaggen?</h5>
+                                </div>
+                                <div class="card-body">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q10" value="A" id="q10a">
+                                        <label class="form-check-label" for="q10a">A) Eine Bezeichnung für Schiffe, die veraltete Sicherheitsstandards nutzen, um Kosten zu sparen.</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q10" value="B" id="q10b">
+                                        <label class="form-check-label" for="q10b">B) Ein Begriff für kleine Schiffe, die günstig unter lokaler Flagge registriert sind.</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q10" value="C" id="q10c">
+                                        <label class="form-check-label" for="q10c">C) Eine Flagge, die bei einem Schiffsausverkauf günstig erworben werden kann.</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q10" value="D" id="q10d">
+                                        <label class="form-check-label" for="q10d">D) Ein Begriff für Schiffe, die besonders günstige Treibstoffe wie Schweröl verwenden.</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="q10" value="E" id="q10e">
+                                        <label class="form-check-label" for="q10e">E) Die Registrierung eines Schiffes in einem Land mit laxen Vorschriften, um Kosten zu senken und weniger strenge Arbeitsgesetze zu nutzen.</label>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <!-- Submit Button -->
+                            <div class="text-center">
+                                <button type="button" class="btn btn-success" onclick="evaluateQuiz()">Antworten speichern</button>
+                            </div>
+                        </form>
+                    
+                        <!-- Ergebnis-Anzeige -->
+                        <div id="quizResult" class="mt-4 text-center"></div>
+                    </div>
+                    
+                    <script>
+                        // Korrekte Antworten speichern
+                        const correctAnswers = {
+                            q1: "C",
+                            q2: "E",
+                            q3: "B",
+                            q4: "B",
+                            q5: "B",
+                            q6: "A",
+                            q7: "A",
+                            q8: "D",
+                            q9: "E",
+                            q10: "E"
+                        };
+                    
+                        function evaluateQuiz() {
+                            const form = document.getElementById("quizForm");
+                            const resultDiv = document.getElementById("quizResult");
+                    
+                            let score = 0;
+                            let totalQuestions = Object.keys(correctAnswers).length;
+                    
+                            Object.keys(correctAnswers).forEach(question => {
+                                const answer = form.querySelector(`input[name='${question}']:checked`);
+                                if (answer && answer.value === correctAnswers[question]) {
+                                    score++;
+                                }
+                            });
+                    
+                            resultDiv.innerHTML = `<h3>Du hast ${score} von ${totalQuestions} Fragen richtig beantwortet!</h3>`;
+                        }
+                    </script>
+                    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+                    <div class="row my-5" style="padding-left: 3rem; padding-right: 3rem;">
+                            <div class="col-xl-12 col-md-12">
+                                <div class="card bg-warning text-white mb-4">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-xl-12 col-md-12">
+                                                <div class="container my-1">
+                                                    <div class="hover-zoom p-4 rounded shadow bg-light text-center my-3">
+                                                        <a href="quellen.html"><h2 class="display-6 text-primary mb-3" style="font-size: 40px;">Weiter zu: Wirtschaft - Quellen</h2></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </main>
+
+
+            
+            
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js" crossorigin="anonymous"></script>
+        <script src="assets/demo/chart-area-demo.js"></script>
+        <script src="assets/demo/chart-bar-demo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/simple-datatables@7.1.2/dist/umd/simple-datatables.min.js" crossorigin="anonymous"></script>
+        <script src="js/datatables-simple-demo.js"></script>
+    </body>
+</html>
